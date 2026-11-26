@@ -53,3 +53,11 @@ td, th { text-align: left; vertical-align: top; padding: 3px 1.5ch 3px 0; border
 th { color: var(--dim); font-weight: 400; }
 
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px dashed var(--faint); margin-top: 32px; padding-top: 8px; font-size: 12px; }
+
+/* multi-page additions */
+.title a.home { border: 0; color: var(--hi); }
+nav.cities { margin: 4px 0 2px; }
+nav.cities a, nav a.on { border: 0; }
+nav a.on { background: var(--fg); color: var(--bg); }
+h3 a.map { font-weight: 400; font-size: 12px; margin-left: .5ch; }
+.acc { color: var(--accent); }

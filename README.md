@@ -1,5 +1,5 @@
-# BA://bratislava
+# CE://central-european-guide
 
-A short, plain guide to Bratislava. Static HTML, styled like the LGA study terminal.
+Short, plain city guides for Central Europe: Bratislava and Prague. Static HTML in the LGA terminal style.
 
-Live: https://jakubdovcik.github.io/bratislava-guide/
+Live: https://jakubdovcik.github.io/central-european-guide/
