@@ -11,7 +11,7 @@
   function rejump() {
     if (!location.hash) return;
     var t = document.getElementById(location.hash.slice(1));
-    if (t) t.scrollIntoView();
+    if (t) t.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
   fit(); rejump();
   window.addEventListener('resize', fit);
