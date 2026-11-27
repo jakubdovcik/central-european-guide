@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CE :: Prague</title>
-<meta name="description" content="Prague in short: sights, neighbourhoods, bars, restaurants, practical tips.">
+<meta name="description" content="Prague in short: Letná, Vinohrady, Malá Strana, the castle, Kutná Hora, food and drink.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,22 +15,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <div class="screen">
 
 <header>
   <div class="title"><a class="home" href="./">CE</a><span class="dim">://</span>central-european-guide<span class="dim">/</span><span class="hi">prague</span></div>
-  <nav class="cities"><a href="./">[h]ome</a> <a href="bratislava.html">[b]ratislava</a> <a href="prague.html" class="on">[p]rague</a></nav>
+  <nav class="cities"><a href="./">[h]ome</a> <a href="bratislava.html">[b]ratislava</a> <a href="slovakia.html">[s]lovakia</a> <a href="prague.html" class="on">[p]rague</a></nav>
   <nav>
-    <a href="#old-town">[1] old town</a>
+    <a href="#map">[0] map</a>
+    <a href="#hoods">[1] where to walk</a>
     <a href="#castle">[2] castle side</a>
-    <a href="#culture">[3] culture</a>
-    <a href="#hoods">[4] neighbourhoods</a>
-    <a href="#one-day">[5] one day</a>
-    <a href="#eat">[6] eat &amp; drink</a>
-    <a href="#practical">[7] practical</a>
+    <a href="#old-town">[3] old town</a>
+    <a href="#more">[4] more</a>
+    <a href="#kutna-hora">[5] kutná hora</a>
+    <a href="#one-day">[6] one day</a>
+    <a href="#eat">[7] eat &amp; drink</a>
+    <a href="#practical">[8] practical</a>
   </nav>
 </header>
 
@@ -49,43 +52,76 @@
 
 <h1>Prague<span class="cursor">_</span></h1>
 <ul>
-  <li>Czech capital on the Vltava; ~4 h by train from Bratislava or Vienna.</li>
-  <li>Bigger than Bratislava: plan 3 days, use trams and metro.</li>
-  <li>Currency: Czech koruna (CZK), not euro.</li>
+  <li>About 4 hours by train from Bratislava or Vienna. Give it three days.</li>
+  <li>The Old Town is where most visitors stay, and it's the weakest part. Overpriced food, exchange booths, people handing out flyers. See it early in the morning and move on.</li>
+  <li>Spend your time in Letná, Vinohrady and Malá Strana instead. They're beautiful old neighbourhoods, and that's also where the good places to eat are.</li>
+  <li>Currency is the Czech koruna (CZK), not the euro.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="old-town">1 · Old Town &amp; Josefov</h2>
+<h2 id="map">0 · Map</h2>
+<div class="map-box" data-city="Prague" data-points='[
+["Letná park",50.09646,14.42717],
+["Letná beer garden",50.09635,14.42555],
+["Holešovice market",50.09826,14.44504],
+["DOX",50.10679,14.44755],
+["Riegrovy sady",50.08018,14.43929],
+["Náměstí Míru",50.0753,14.43908],
+["Jiřího z Poděbrad",50.07796,14.45035],
+["Malostranské náměstí",50.08811,14.40433],
+["Kampa",50.08388,14.40766],
+["Prague Castle",50.09081,14.40052],
+["Petřín tower",50.08352,14.39509],
+["Charles Bridge",50.087,14.40795],
+["Astronomical Clock",50.087,14.4207],
+["Old-New Synagogue",50.09004,14.41859],
+["Wenceslas Square",50.08159,14.42717],
+["Žižkov TV Tower",50.08102,14.45106],
+["Vyšehrad",50.06421,14.41945]
+]'></div>
+<ol class="legend"></ol>
+
+<!-- ============================================================ -->
+<h2 id="hoods">1 · Where to walk</h2>
 <pre class="art" aria-hidden="true">
-              ___________
-             |  _______  |
-             | /  XII  \ |       týn church
-             || IX  * III||        /\    /\
-             | \__VI___/ |        /  \  /  \
-             |  (  o  )  |       |    ||    |
-             |___________|       | [] || [] |
-             orloj, 1410         |____||____|
+         letná          vinohrady         malá strana
+        _[|]_            _____              /^\  /^\
+       | o o |          |[] []|            |   ||   |
+       |  ~  |   ~~     |[] []|      ~~~   |[] ||[] |
+    ___|_____|________  |_____|___________|____||___|___
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ vltava
 </pre>
 
-<h3>Old Town Square &amp; Astronomical Clock <a class="map" href="https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock">map</a></h3>
+<h3>Letná <a class="map" href="https://www.google.com/maps/search/?api=1&query=Letensk%C3%A9+sady+Praha">map</a></h3>
 <ul>
-  <li>Orloj (1410): apostles parade on the hour, 9:00–23:00.</li>
-  <li>Týn Church's twin spires; Old Town Hall tower for the view.</li>
-  <li><span class="acc">tip:</span> skip the square's restaurants; eat a few streets away.</li>
+  <li>Up on the plateau above the river. Big park, apartment blocks from the early 1900s, lots of young families.</li>
+  <li>From the edge of the park you see every bridge in a row.</li>
+  <li>The beer garden at Letenský zámeček has plastic cups, cheap beer and the best sunset in town.</li>
+  <li>A giant metronome stands where the Stalin monument used to be.</li>
+  <li>Good for breakfast and coffee (Eska, moe, see section 7). Walk on into Holešovice afterwards.</li>
 </ul>
 
-<h3>Charles Bridge <a class="map" href="https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague">map</a></h3>
+<h3>Vinohrady <a class="map" href="https://www.google.com/maps/search/?api=1&query=Riegrovy+sady+Praha">map</a></h3>
 <ul>
-  <li>Stone bridge begun 1357; 30 baroque statues.</li>
-  <li>Go before 8:00 or late evening; packed by 10.</li>
-  <li>Climb the Old Town bridge tower for the classic photo.</li>
+  <li>Wide streets of Art Nouveau houses, built for the well-off around 1900. My favourite part of Prague to just walk.</li>
+  <li>Best density of good restaurants, cafés and wine bars in the city.</li>
+  <li>Riegrovy sady park has a beer garden with a view of the castle at sunset.</li>
+  <li>Náměstí Míru with its church, and Jiřího z Poděbrad with Plečnik's church and a farmers' market.</li>
 </ul>
 
-<h3>Jewish Quarter (Josefov) <a class="map" href="https://www.google.com/maps/search/?api=1&query=Old+Jewish+Cemetery+Prague">map</a></h3>
+<h3>Malá Strana <a class="map" href="https://www.google.com/maps/search/?api=1&query=Mal%C3%A1+Strana+Praha">map</a></h3>
 <ul>
-  <li>Old-New Synagogue: oldest active synagogue in Europe (13th c.).</li>
-  <li>Old Jewish Cemetery, Spanish Synagogue.</li>
-  <li>One Jewish Museum ticket covers most sites. Closed Saturdays.</li>
+  <li>Baroque streets under the castle. Touristy along the main route, quiet one street off it.</li>
+  <li>St. Nicholas Church, the Lennon Wall, Kampa island by the river.</li>
+  <li>Wallenstein Garden is free and has peacocks.</li>
+  <li>Some good places to eat here too, if you avoid the ones with photo menus.</li>
+</ul>
+
+<h3>Holešovice <a class="map" href="https://www.google.com/maps/search/?api=1&query=DOX+Prague">map</a></h3>
+<ul>
+  <li>Old industrial district next to Letná, now galleries, cafés and bars.</li>
+  <li>DOX for contemporary art (there's a huge wooden airship on the roof).</li>
+  <li>The old slaughterhouse is now Holešovice market. Veletržní palác has the National Gallery's modern art.</li>
 </ul>
 
 <!-- ============================================================ -->
@@ -104,26 +140,53 @@
 
 <h3>Prague Castle &amp; St. Vitus <a class="map" href="https://www.google.com/maps/search/?api=1&query=Prague+Castle">map</a></h3>
 <ul>
-  <li>Largest ancient castle complex in the world.</li>
-  <li>St. Vitus Cathedral, Golden Lane, Old Royal Palace.</li>
-  <li>Courtyards free; buildings need a ticket. Guard change at noon.</li>
+  <li>A huge complex: St. Vitus Cathedral, the Old Royal Palace, Golden Lane.</li>
+  <li>The courtyards are free. You need a ticket for the buildings.</li>
+  <li>Changing of the guard at noon.</li>
 </ul>
 
-<h3>Malá Strana <a class="map" href="https://www.google.com/maps/search/?api=1&query=Mal%C3%A1+Strana+Prague">map</a></h3>
+<h3>Petřín <a class="map" href="https://www.google.com/maps/search/?api=1&query=Pet%C5%99%C3%ADn+Lookout+Tower">map</a></h3>
 <ul>
-  <li>Baroque Lesser Town below the castle; St. Nicholas Church.</li>
-  <li>Lennon Wall, Kampa Island, Wallenstein Garden (free, peacocks).</li>
-</ul>
-
-<h3>Petřín Hill <a class="map" href="https://www.google.com/maps/search/?api=1&query=Pet%C5%99%C3%ADn+Lookout+Tower">map</a></h3>
-<ul>
-  <li>Funicular up (normal transit ticket works).</li>
-  <li>1891 lookout tower, a mini Eiffel; 299 steps.</li>
-  <li>Mirror maze, rose garden, walk down to the castle.</li>
+  <li>Hill with orchards and gardens. The funicular takes a normal transit ticket.</li>
+  <li>The lookout tower (1891) is a small copy of the Eiffel Tower. 299 steps.</li>
+  <li>Walk from here along the ridge to the castle.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="culture">3 · Culture &amp; quirks</h2>
+<h2 id="old-town">3 · Old Town <span class="dim">· go early</span></h2>
+<pre class="art" aria-hidden="true">
+              ___________
+             |  _______  |
+             | /  XII  \ |       týn church
+             || IX  * III||        /\    /\
+             | \__VI___/ |        /  \  /  \
+             |  (  o  )  |       |    ||    |
+             |___________|       | [] || [] |
+             orloj, 1410         |____||____|
+</pre>
+<p>Worth seeing once, but it's a bit of a scam zone. Don't eat on the squares, don't change money at the booths, and don't buy trdelník. Come before 9 when it's empty, then leave for Letná or Vinohrady.</p>
+
+<h3>Charles Bridge <a class="map" href="https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague">map</a></h3>
+<ul>
+  <li>Stone bridge from 1357 with 30 baroque statues.</li>
+  <li>Before 8 in the morning it's beautiful. By 10 you can't move.</li>
+</ul>
+
+<h3>Old Town Square &amp; the Astronomical Clock <a class="map" href="https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock">map</a></h3>
+<ul>
+  <li>The clock is from 1410. On the hour, little apostles go past the windows. It takes about 45 seconds.</li>
+  <li>Týn Church with its two spires. The town hall tower has a good view.</li>
+</ul>
+
+<h3>Jewish Quarter (Josefov) <a class="map" href="https://www.google.com/maps/search/?api=1&query=Old+Jewish+Cemetery+Prague">map</a></h3>
+<ul>
+  <li>The Old-New Synagogue (13th century) is still in use.</li>
+  <li>The Old Jewish Cemetery and the Spanish Synagogue are the other two to see.</li>
+  <li>One Jewish Museum ticket covers most sites. Closed on Saturdays.</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="more">4 · More</h2>
 <pre class="art" aria-hidden="true">
                  _|_
                 |___|
@@ -134,79 +197,62 @@
            _____|   |_____     žižkov, 216 m
 </pre>
 
-<h3>Wenceslas Square <a class="map" href="https://www.google.com/maps/search/?api=1&query=Wenceslas+Square+Prague">map</a></h3>
+<h3>Vyšehrad <a class="map" href="https://www.google.com/maps/search/?api=1&query=Vy%C5%A1ehrad+Prague">map</a></h3>
 <ul>
-  <li>Boulevard of the 1989 Velvet Revolution.</li>
-  <li>National Museum at the top; Jan Palach memorial in front.</li>
+  <li>Old fortress on a cliff above the river, south of the centre. Few tourists.</li>
+  <li>The cemetery has Dvořák, Smetana and Mucha.</li>
+  <li>Metro C to Vyšehrad, or walk there along the river.</li>
 </ul>
 
 <h3>Žižkov TV Tower <a class="map" href="https://www.google.com/maps/search/?api=1&query=%C5%BDi%C5%BEkov+Television+Tower">map</a></h3>
 <ul>
-  <li>216 m brutalist rocket (1985–92), observation deck.</li>
+  <li>216 m concrete tower from the 1980s. There's a viewing deck.</li>
   <li>David Černý's giant faceless babies crawl up the sides.</li>
 </ul>
 
-<h3>Letná beer garden <a class="map" href="https://www.google.com/maps/search/?api=1&query=Letn%C3%A1+beer+garden+Prague">map</a></h3>
+<h3>Wenceslas Square <a class="map" href="https://www.google.com/maps/search/?api=1&query=Wenceslas+Square+Prague">map</a></h3>
 <ul>
-  <li>Plastic cups, cheap beer, best view of the bridges.</li>
-  <li>Giant metronome where Stalin's statue stood.</li>
+  <li>Where the crowds gathered in 1989. The National Museum is at the top.</li>
+  <li>Jan Palach's memorial is in front of the museum.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="hoods">4 · Neighbourhoods &amp; out</h2>
+<h2 id="kutna-hora">5 · Kutná Hora <span class="dim">· day trip</span></h2>
 <pre class="art" aria-hidden="true">
-         letná          vinohrady         holešovice        vyšehrad
-        _[|]_            _____             _______            /\ /\
-       | o o |          |[] []|           | DOX   |          /  V  \
-       |  ~  |   ~~     |[] []|      ~~~  |_______|  ~~~    |  +  |
-    ___|_____|________  |_____|__________________________ __|_____|__
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ vltava
+               /\  /\  /\
+              /  \/  \/  \          st. barbara's
+             |  /\  /\  /\ |
+             | |  ||  ||  ||
+     ________|_|__||__||__||____     _____
+    |  []  []  []  []  []  []   |   (o o o)   sedlec
+    |___________________________|   (o o o)   ossuary
 </pre>
-
-<h3>Letná</h3>
 <ul>
-  <li>Leafy, local, above the river; park + beer garden.</li>
-  <li>Breakfast at Eska or moe (see below).</li>
-</ul>
-
-<h3>Vinohrady <a class="map" href="https://www.google.com/maps/search/?api=1&query=Riegrovy+sady+Prague">map</a></h3>
-<ul>
-  <li>Art Nouveau streets, best restaurant density in the city.</li>
-  <li>Riegrovy sady: beer garden with sunset over the castle.</li>
-  <li>Náměstí Míru; Jiřího z Poděbrad: Plečnik's church, farmers' market.</li>
-</ul>
-
-<h3>Holešovice &amp; DOX <a class="map" href="https://www.google.com/maps/search/?api=1&query=DOX+Centre+for+Contemporary+Art+Prague">map</a></h3>
-<ul>
-  <li>Ex-industrial district, now galleries and cafés.</li>
-  <li>DOX: contemporary art, with the Gulliver airship on the roof.</li>
-  <li>Holešovice market (old slaughterhouse); Veletržní palác for modern art.</li>
-</ul>
-
-<h3>Vyšehrad <a class="map" href="https://www.google.com/maps/search/?api=1&query=Vy%C5%A1ehrad+Prague">map</a></h3>
-<ul>
-  <li>Fortress on a cliff over the Vltava; few tourists.</li>
-  <li>Cemetery with Dvořák, Smetana, Mucha.</li>
-  <li>Metro C to Vyšehrad, or walk along the river.</li>
+  <li>Beautiful medieval town about an hour east of Prague by train. It's on UNESCO's list.</li>
+  <li>In the Middle Ages it was rich from silver. The Bohemian kings minted their coins at the Italian Court here.</li>
+  <li>St. Barbara's, a huge Gothic church built by the miners.</li>
+  <li>The Sedlec ossuary, a chapel decorated with the bones of tens of thousands of people. Strange, and very popular.</li>
+  <li>The game Kingdom Come: Deliverance II is set here. In the game the town is called Kuttenberg, and you can walk the real streets. There are fan routes and costumed tours.</li>
+  <li><span class="acc">tip:</span> the main station is in Sedlec, next to the ossuary. See that first, then take the small local train or walk 30 minutes to the old town.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="one-day">5 · One day</h2>
+<h2 id="one-day">6 · One day</h2>
 <pre class="art" aria-hidden="true">
     07:30 ----- 10:00 ----- 13:00 ----- 15:00 ----- 18:00 ----- 21:00
       |           |           |           |           |           |
-   bridge      castle       lunch      old town     letná       bar
+   bridge      castle       lunch       letná       sunset    vinohrady
 </pre>
 <ol>
-  <li>Charles Bridge early, before the crowds.</li>
-  <li>Malá Strana → up to the castle and St. Vitus.</li>
-  <li>Lunch: Kuchyň by the castle, or back over the river.</li>
-  <li>Old Town Square (clock on the hour) → Josefov.</li>
-  <li>Sunset beer at Letná; dinner and drinks in Vinohrady.</li>
+  <li>Charles Bridge at 7:30, then the Old Town Square while it's still empty.</li>
+  <li>Cross to Malá Strana and walk up to the castle.</li>
+  <li>Lunch in Malá Strana, or Kuchyň by the castle.</li>
+  <li>Down and across to Letná. Coffee, the park, Holešovice if you have time.</li>
+  <li>Sunset at the Letná beer garden or Riegrovy sady. Dinner and drinks in Vinohrady.</li>
 </ol>
 
 <!-- ============================================================ -->
-<h2 id="eat">6 · Bars &amp; restaurants</h2>
+<h2 id="eat">7 · Bars &amp; restaurants</h2>
 <pre class="art" aria-hidden="true">
       _______        _______        \~~~~~/        _____
      |~~~~~~~|      |~~~~~~~|        \   /        (_____)
@@ -215,62 +261,62 @@
      |_______|      |_______|         _|_         |_____|
       plzeň          tankové        koktejl       knedlík
 </pre>
-<p class="dim">Source: <a href="https://www.tasteofprague.com/pragueblog">Taste of Prague</a>, locals who run food tours. Bib = Michelin Bib Gourmand (good value).</p>
+<p class="dim">Most of these come from <a href="https://www.tasteofprague.com/pragueblog">Taste of Prague</a>, locals who run food tours. "Bib" is Michelin's Bib Gourmand list, for good food at fair prices. For a walk-in meal, head to Letná, Vinohrady or Malá Strana rather than the Old Town.</p>
 
-<h3>Czech, old &amp; new</h3>
+<h3>Czech, old and new</h3>
 <ul>
-  <li><b>U Kalendů</b> <span class="dim">centre · Bib</span>: Pilsner pub, precise Czech cooking. <a href="https://www.google.com/maps/search/?api=1&query=U+Kalend%C5%AF+Prague">map</a></li>
-  <li><b>U Matěje</b> <span class="dim">Bib</span>: modern Czech pub by chef Punčochář. <a href="https://www.google.com/maps/search/?api=1&query=U+Mat%C4%9Bje+Prague">map</a></li>
-  <li><b>Šnycl</b> <span class="dim">Anděl · Bib</span>: schnitzel and fresh Pilsner. <a href="https://www.google.com/maps/search/?api=1&query=%C5%A0nycl+Prague">map</a></li>
-  <li><b>Eatery</b> <span class="dim">Holešovice</span>: modern Czech, counter seats; dill sauce. <a href="https://www.google.com/maps/search/?api=1&query=Eatery+Prague">map</a></li>
-  <li><b>Mazel</b> <span class="dim">Vinohrady</span>: Czech comfort food, veggie section. <a href="https://www.google.com/maps/search/?api=1&query=Mazel+Prague">map</a></li>
-  <li><b>Biskup</b> <span class="dim">Bib</span>: Czech classics at a counter; set lunch. <a href="https://www.google.com/maps/search/?api=1&query=Biskup+Prague">map</a></li>
+  <li><b>U Kalendů</b> <span class="dim">centre · Bib</span>. Pilsner pub with careful Czech cooking. <a href="https://www.google.com/maps/search/?api=1&query=U+Kalend%C5%AF+Prague">map</a></li>
+  <li><b>U Matěje</b> <span class="dim">Bib</span>. Modern Czech pub from chef Punčochář. <a href="https://www.google.com/maps/search/?api=1&query=U+Mat%C4%9Bje+Prague">map</a></li>
+  <li><b>Šnycl</b> <span class="dim">Anděl · Bib</span>. Schnitzel and fresh Pilsner. <a href="https://www.google.com/maps/search/?api=1&query=%C5%A0nycl+Prague">map</a></li>
+  <li><b>Eatery</b> <span class="dim">Holešovice</span>. Modern Czech, sit at the counter. The dill sauce. <a href="https://www.google.com/maps/search/?api=1&query=Eatery+Prague">map</a></li>
+  <li><b>Mazel</b> <span class="dim">Vinohrady</span>. Czech comfort food, good vegetarian choice. <a href="https://www.google.com/maps/search/?api=1&query=Mazel+Prague">map</a></li>
+  <li><b>Biskup</b> <span class="dim">Bib</span>. Czech classics at a counter. Go for the set lunch. <a href="https://www.google.com/maps/search/?api=1&query=Biskup+Prague">map</a></li>
 </ul>
 
-<h3>Worth a booking</h3>
+<h3>Book ahead</h3>
 <ul>
-  <li><b>Zlatá Praha</b> <span class="dim">Fairmont · 1★</span>: tasting menu over the Old Town; ~3 h. <a href="https://www.google.com/maps/search/?api=1&query=Zlat%C3%A1+Praha+Prague">map</a></li>
-  <li><b>Taro</b> <span class="dim">Národní · 1★</span>: Vietnamese-Czech tasting menu; lunch too. <a href="https://www.google.com/maps/search/?api=1&query=Taro+Prague">map</a></li>
-  <li><b>Salabka</b> <span class="dim">Troja vineyard · 1★</span>: drink their own wines. <a href="https://www.google.com/maps/search/?api=1&query=Salabka+Prague">map</a></li>
-  <li><b>Oda</b> <span class="dim">Vinohrady</span>: small, Japanese-style fermentation, bar seats. <a href="https://www.google.com/maps/search/?api=1&query=Oda+Prague">map</a></li>
+  <li><b>Zlatá Praha</b> <span class="dim">Fairmont · 1★</span>. Tasting menu with the Old Town below you. Allow 3 hours. <a href="https://www.google.com/maps/search/?api=1&query=Zlat%C3%A1+Praha+Prague">map</a></li>
+  <li><b>Taro</b> <span class="dim">Národní · 1★</span>. Vietnamese-Czech tasting menu. They do lunch too. <a href="https://www.google.com/maps/search/?api=1&query=Taro+Prague">map</a></li>
+  <li><b>Salabka</b> <span class="dim">Troja · 1★</span>. In a vineyard. Drink their own wine. <a href="https://www.google.com/maps/search/?api=1&query=Salabka+Prague">map</a></li>
+  <li><b>Oda</b> <span class="dim">Vinohrady</span>. Small place, Japanese-style ferments, bar seats. <a href="https://www.google.com/maps/search/?api=1&query=Oda+Prague">map</a></li>
 </ul>
 
 <h3>Casual</h3>
 <ul>
-  <li><b>Kantýna</b> <span class="dim">by Wenceslas Sq</span>: butcher-canteen in an old bank; no bookings. <a href="https://www.google.com/maps/search/?api=1&query=Kant%C3%BDna+Prague">map</a></li>
-  <li><b>Sugo Pasta Bar</b> <span class="dim">Karlín · Bib</span>: fresh pasta. <a href="https://www.google.com/maps/search/?api=1&query=Sugo+Pasta+Bar+Prague">map</a></li>
-  <li><b>Pho100</b> <span class="dim">Anděl · Bib</span>: fast, excellent pho. <a href="https://www.google.com/maps/search/?api=1&query=Pho100+Prague">map</a></li>
-  <li><b>Lá Bù Lá</b> <span class="dim">Vinohrady</span>: spicy Chinese; beef noodles. <a href="https://www.google.com/maps/search/?api=1&query=L%C3%A1+B%C3%B9+L%C3%A1+Prague">map</a></li>
-  <li><b>Seven North</b> <span class="dim">Náplavní</span>: veg-forward Middle Eastern. <a href="https://www.google.com/maps/search/?api=1&query=Seven+North+Prague">map</a></li>
+  <li><b>Kantýna</b> <span class="dim">by Wenceslas Sq</span>. Butcher's canteen in an old bank. No bookings. <a href="https://www.google.com/maps/search/?api=1&query=Kant%C3%BDna+Prague">map</a></li>
+  <li><b>Sugo Pasta Bar</b> <span class="dim">Karlín · Bib</span>. Fresh pasta. <a href="https://www.google.com/maps/search/?api=1&query=Sugo+Pasta+Bar+Prague">map</a></li>
+  <li><b>Pho100</b> <span class="dim">Anděl · Bib</span>. Fast, very good pho. <a href="https://www.google.com/maps/search/?api=1&query=Pho100+Prague">map</a></li>
+  <li><b>Lá Bù Lá</b> <span class="dim">Vinohrady</span>. Chinese with real heat. Beef noodles. <a href="https://www.google.com/maps/search/?api=1&query=L%C3%A1+B%C3%B9+L%C3%A1+Prague">map</a></li>
+  <li><b>Seven North</b> <span class="dim">Náplavní</span>. Middle Eastern, mostly vegetables. <a href="https://www.google.com/maps/search/?api=1&query=Seven+North+Prague">map</a></li>
 </ul>
 
-<h3>Beer &amp; wine</h3>
+<h3>Beer and wine</h3>
 <ul>
-  <li><b>Pivovar Římská</b> <span class="dim">Vinohrady</span>: brewpub; custard buns. <a href="https://www.google.com/maps/search/?api=1&query=Pivovar+%C5%98%C3%ADmsk%C3%A1+Prague">map</a></li>
-  <li><b>Kuchyň</b> <span class="dim">by the castle</span>: gastropub with a view. <a href="https://www.google.com/maps/search/?api=1&query=Kuchy%C5%88+Prague">map</a></li>
-  <li><b>Enoteca JZP</b> <span class="dim">Vinohrady</span>: Italian, natural wine, Negronis. <a href="https://www.google.com/maps/search/?api=1&query=Enoteca+JZP+Prague">map</a></li>
-  <li><b>Sko</b> <span class="dim">Holešovice market</span>: Slovak wines. <a href="https://www.google.com/maps/search/?api=1&query=Sko+Prague">map</a></li>
+  <li><b>Pivovar Římská</b> <span class="dim">Vinohrady</span>. Brewpub. Get the custard buns. <a href="https://www.google.com/maps/search/?api=1&query=Pivovar+%C5%98%C3%ADmsk%C3%A1+Prague">map</a></li>
+  <li><b>Kuchyň</b> <span class="dim">by the castle</span>. Pub food with a view over the city. <a href="https://www.google.com/maps/search/?api=1&query=Kuchy%C5%88+Prague">map</a></li>
+  <li><b>Enoteca JZP</b> <span class="dim">Vinohrady</span>. Italian, natural wine, Negronis. <a href="https://www.google.com/maps/search/?api=1&query=Enoteca+JZP+Prague">map</a></li>
+  <li><b>Sko</b> <span class="dim">Holešovice market</span>. Slovak wines. <a href="https://www.google.com/maps/search/?api=1&query=Sko+Prague">map</a></li>
 </ul>
 
 <h3>Cocktails</h3>
 <ul>
-  <li><b>Hemingway Bar</b> <span class="dim">Opatovická</span>: the classic; now serves food. <a href="https://www.google.com/maps/search/?api=1&query=Hemingway+Bar+Prague">map</a></li>
-  <li><b>Golden Eye</b> <span class="dim">Fairmont</span>: the view, cheaper than dinner. <a href="https://www.google.com/maps/search/?api=1&query=Golden+Eye+Prague">map</a></li>
-  <li><b>Taigen</b> <span class="dim">Vinohrady</span>: ~20 seats, house cordials. <a href="https://www.google.com/maps/search/?api=1&query=Taigen+Prague">map</a></li>
+  <li><b>Hemingway Bar</b> <span class="dim">Opatovická</span>. The classic. Now serves food too. <a href="https://www.google.com/maps/search/?api=1&query=Hemingway+Bar+Prague">map</a></li>
+  <li><b>Golden Eye</b> <span class="dim">Fairmont</span>. Same view as Zlatá Praha for the price of a drink. <a href="https://www.google.com/maps/search/?api=1&query=Golden+Eye+Fairmont+Prague">map</a></li>
+  <li><b>Taigen</b> <span class="dim">Vinohrady</span>. About 20 seats, house-made cordials. <a href="https://www.google.com/maps/search/?api=1&query=Taigen+Prague">map</a></li>
 </ul>
 
-<h3>Coffee &amp; sweets</h3>
+<h3>Coffee and sweets</h3>
 <ul>
-  <li><b>Café Savoy</b> <span class="dim">riverside</span>: grand café breakfast; book weekends. <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Savoy+Prague">map</a></li>
-  <li><b>Café Imperial</b>: tiled Belle Époque room. <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Imperial+Prague">map</a></li>
-  <li><b>Eska</b> <span class="dim">Letná</span>: bakery, specialty coffee. <a href="https://www.google.com/maps/search/?api=1&query=Eska+Prague">map</a></li>
-  <li><b>moe</b> <span class="dim">Letná</span>: breakfast, coffee. <a href="https://www.google.com/maps/search/?api=1&query=moe+Prague">map</a></li>
-  <li><b>Myšák</b> <span class="dim">Holešovice market</span>: pastries, four seats. <a href="https://www.google.com/maps/search/?api=1&query=My%C5%A1%C3%A1k+Prague">map</a></li>
-  <li><b>Paté</b> <span class="dim">Národní</span>: banh mi, shokupan, matcha. <a href="https://www.google.com/maps/search/?api=1&query=Pat%C3%A9+Prague">map</a></li>
+  <li><b>Café Savoy</b> <span class="dim">by the river</span>. Grand café, good breakfast. Book at weekends. <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Savoy+Prague">map</a></li>
+  <li><b>Café Imperial</b>. Tiled room from 1914. <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Imperial+Prague">map</a></li>
+  <li><b>Eska</b> <span class="dim">Letná</span>. Bakery and coffee. <a href="https://www.google.com/maps/search/?api=1&query=Eska+Letn%C3%A1+Prague">map</a></li>
+  <li><b>moe</b> <span class="dim">Letná</span>. Breakfast and coffee. <a href="https://www.google.com/maps/search/?api=1&query=moe+Letn%C3%A1+Prague">map</a></li>
+  <li><b>Myšák</b> <span class="dim">Holešovice market</span>. Pastries, four seats. <a href="https://www.google.com/maps/search/?api=1&query=My%C5%A1%C3%A1k+Hole%C5%A1ovice+Prague">map</a></li>
+  <li><b>Paté</b> <span class="dim">Národní</span>. Banh mi, milk bread, matcha. <a href="https://www.google.com/maps/search/?api=1&query=Pat%C3%A9+Prague">map</a></li>
 </ul>
 
 <h3>My saved spots</h3>
-<p class="dim">From my own Google Maps lists. ★ = also recommended above.</p>
+<p class="dim">Straight from my Google Maps lists, no notes. ★ means it's also listed above.</p>
 <p><b>Bars</b></p>
 <ul class="cols">
   <li><a href="https://www.google.com/maps/search/?api=1&query=Bokovka+Prague">Bokovka</a> <span class="dim">Old Town</span></li>
@@ -331,8 +377,9 @@
   <li><a href="https://www.google.com/maps/search/?api=1&query=Dv%C5%AFr+Kobylisy+Prague">Dvůr Kobylisy</a></li>
 </ul>
 
+
 <!-- ============================================================ -->
-<h2 id="practical">7 · Practical</h2>
+<h2 id="practical">8 · Practical</h2>
 <pre class="art" aria-hidden="true">
               _______________|___________
              |  _   _   _   _   _   _  |
@@ -343,30 +390,30 @@
 
 <h3>Getting around</h3>
 <ul>
-  <li>Airport: Airport Express bus to the main station, or bus 119 to metro A.</li>
-  <li>Transit: PID Lítačka app or yellow machines; 30/90-min or 24 h tickets.</li>
-  <li>Tram 22 passes most sights: castle, Malá Strana, Národní, Vinohrady.</li>
-  <li>Taxis: Bolt, Uber or Liftago. Never hail on the street.</li>
+  <li>From the airport: Airport Express bus to the main station, or bus 119 to the metro.</li>
+  <li>Tickets in the PID Lítačka app or from the yellow machines.</li>
+  <li>Tram 22 goes past the castle, Malá Strana, Národní and through Vinohrady. Good for sightseeing.</li>
+  <li>Taxis: order through Bolt, Uber or Liftago. Don't take one off the street.</li>
 </ul>
 
 <h3>Money</h3>
 <ul>
-  <li>Pay by card almost everywhere.</li>
-  <li>Avoid "0% commission" exchange booths; use bank ATMs.</li>
-  <li>When a card machine offers euros, choose CZK.</li>
+  <li>Cards work almost everywhere.</li>
+  <li>Skip the "0% commission" exchange booths. Use a bank ATM.</li>
+  <li>If a card machine offers to charge you in euros, say no and pay in CZK.</li>
 </ul>
 
 <h3>What to order</h3>
 <table>
   <tr><th>svíčková</th><td>beef in cream sauce, dumplings, cranberries</td></tr>
   <tr><th>guláš</th><td>beef goulash with bread dumplings</td></tr>
-  <tr><th>smažený sýr</th><td>fried cheese with tartar sauce</td></tr>
-  <tr><th>chlebíčky</th><td>open sandwiches, a snack classic</td></tr>
+  <tr><th>smažený sýr</th><td>fried cheese, tartar sauce</td></tr>
+  <tr><th>chlebíčky</th><td>small open sandwiches</td></tr>
   <tr><th>tankové pivo</th><td>unpasteurised Pilsner from the tank</td></tr>
-  <tr><th>trdelník</th><td>skip: a tourist invention, not Czech</td></tr>
+  <tr><th>trdelník</th><td>skip it, it was made up for tourists</td></tr>
 </table>
 
-<h3>Czech words</h3>
+<h3>A few Czech words</h3>
 <table>
   <tr><th>Dobrý den</th><td>hello</td></tr>
   <tr><th>Děkuji</th><td>thank you</td></tr>
@@ -382,6 +429,8 @@
 </footer>
 
 </div>
-<script src="fit.js?v=3"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js?v=1"></script>
+<script src="fit.js?v=4"></script>
 </body>
 </html>

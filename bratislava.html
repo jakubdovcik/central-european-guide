@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CE :: Bratislava</title>
-<meta name="description" content="Bratislava in short: sights, bars, restaurants, practical tips.">
+<meta name="description" content="Bratislava in short: old town, views, coffee, food and drink.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,22 +15,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <div class="screen">
 
 <header>
   <div class="title"><a class="home" href="./">CE</a><span class="dim">://</span>central-european-guide<span class="dim">/</span><span class="hi">bratislava</span></div>
-  <nav class="cities"><a href="./">[h]ome</a> <a href="bratislava.html" class="on">[b]ratislava</a> <a href="prague.html">[p]rague</a></nav>
+  <nav class="cities"><a href="./">[h]ome</a> <a href="bratislava.html" class="on">[b]ratislava</a> <a href="slovakia.html">[s]lovakia</a> <a href="prague.html">[p]rague</a></nav>
   <nav>
+    <a href="#map">[0] map</a>
     <a href="#old-town">[1] old town</a>
     <a href="#views">[2] views</a>
-    <a href="#culture">[3] culture</a>
-    <a href="#trips">[4] trips out</a>
-    <a href="#one-day">[5] one day</a>
-    <a href="#eat">[6] eat &amp; drink</a>
-    <a href="#practical">[7] practical</a>
+    <a href="#coffee">[3] coffee</a>
+    <a href="#culture">[4] more</a>
+    <a href="#trips">[5] close by</a>
+    <a href="#one-day">[6] one day</a>
+    <a href="#eat">[7] eat &amp; drink</a>
+    <a href="#practical">[8] practical</a>
   </nav>
 </header>
 
@@ -46,10 +49,31 @@
 
 <h1>Bratislava<span class="cursor">_</span></h1>
 <ul>
-  <li>Slovak capital on the Danube; 1 h to Vienna, 2 h to Budapest.</li>
-  <li>Old town: 15 min end to end on foot. A long weekend is plenty.</li>
-  <li>Currency: euro.</li>
+  <li>Small capital on the Danube. Vienna is an hour away, Budapest two.</li>
+  <li>The old town takes 15 minutes to cross on foot. Walk it slowly anyway.</li>
+  <li>Late November to Christmas the main squares turn into Christmas markets.</li>
+  <li>Currency is the euro.</li>
 </ul>
+
+<!-- ============================================================ -->
+<h2 id="map">0 · Map</h2>
+<div class="map-box" data-city="Bratislava" data-points='[
+["Bratislava Castle",48.1424,17.1000],
+["St. Martin&apos;s Cathedral",48.14198,17.10488],
+["Michael&apos;s Gate",48.14517,17.10674],
+["Main Square",48.14347,17.10824],
+["Primate&apos;s Palace",48.14374,17.10956],
+["Čumil",48.14284,17.10886],
+["Hviezdoslav Square",48.14157,17.10861],
+["Slavín",48.1539,17.09959],
+["Blue Church",48.14336,17.11674],
+["Sad Janka Kráľa",48.1343,17.11064],
+["Slovak Radio",48.15409,17.11384],
+["Slovak National Gallery",48.14041,17.10841],
+["Eurovea",48.14057,17.12182],
+["UFO bridge",48.14073,17.10435]
+]'></div>
+<ol class="legend"></ol>
 
 <!-- ============================================================ -->
 <h2 id="old-town">1 · Old Town</h2>
@@ -62,68 +86,106 @@
     ______| | | |  _  | [] | []| | | | []|______
           st. martin's    michalská   gate
 </pre>
+<p>This is the part I'd spend most time on. You don't need a plan. Go in at Michael's Gate, get lost in the side streets, and stop for coffee twice.</p>
 
-<h3>Bratislava Castle <a class="map" href="https://www.google.com/maps/search/?api=1&query=Bratislava+Castle">map</a></h3>
+<h3>Christmas markets <span class="acc">now</span></h3>
 <ul>
-  <li>White four-towered "upturned table" on the hill; rebuilt 1950s–60s.</li>
-  <li>Grounds and baroque garden are free; best Danube view.</li>
-  <li><span class="acc">tip:</span> come at sunset, walk down the old steps into town.</li>
-</ul>
-
-<h3>St. Martin's Cathedral <a class="map" href="https://www.google.com/maps/search/?api=1&query=St.+Martin%27s+Cathedral+Bratislava">map</a></h3>
-<ul>
-  <li>Coronation church of Hungarian kings, 1563–1830 (incl. Maria Theresa).</li>
-  <li>Gilded crown on the 85 m spire; brass crowns in the pavement trace the route.</li>
+  <li>Main Square and Hviezdoslav Square, from late November until just before Christmas.</li>
+  <li>Get lokše (thin potato pancakes), punch or mulled wine, and walk between the stalls.</li>
+  <li>Evenings are busiest and best.</li>
 </ul>
 
 <h3>Michael's Gate &amp; the lanes <a class="map" href="https://www.google.com/maps/search/?api=1&query=Michael%27s+Gate+Bratislava">map</a></h3>
 <ul>
-  <li>Last medieval gate; tower view + small weapons museum.</li>
-  <li>Kilometre-zero plaque under the arch.</li>
-  <li>Michalská and Ventúrska: the café and bar strip.</li>
+  <li>The one gate left from the medieval walls. You can go up the tower.</li>
+  <li>Under the arch there's a "kilometre zero" plaque with distances to other capitals.</li>
+  <li>Michalská and Ventúrska run south from here, full of cafés and bars.</li>
 </ul>
 
 <h3>Main Square &amp; Primate's Palace <a class="map" href="https://www.google.com/maps/search/?api=1&query=Primate%27s+Palace+Bratislava">map</a></h3>
 <ul>
-  <li>Old Town Hall (climb the tower), Roland fountain (1572).</li>
-  <li>Primate's Palace: Hall of Mirrors, where the Peace of Pressburg was signed (1805).</li>
-  <li>17th-c. English tapestries found hidden in its walls.</li>
+  <li>Old Town Hall with a tower you can climb, and the Roland fountain from 1572.</li>
+  <li>The pink palace behind it has a Hall of Mirrors where the Peace of Pressburg was signed in 1805.</li>
+  <li>Upstairs: English tapestries from the 1600s, found hidden in the walls during repairs.</li>
+</ul>
+
+<h3>St. Martin's Cathedral <a class="map" href="https://www.google.com/maps/search/?api=1&query=St.+Martin%27s+Cathedral+Bratislava">map</a></h3>
+<ul>
+  <li>Hungarian kings and queens were crowned here from 1563 to 1830, Maria Theresa too.</li>
+  <li>There's a gilded crown on top of the spire. Small brass crowns in the pavement mark the old coronation route.</li>
+  <li>A 1970s highway runs right past it. Locals still complain.</li>
+</ul>
+
+<h3>Čumil <a class="map" href="https://www.google.com/maps/search/?api=1&query=%C4%8Cumil+Bratislava">map</a></h3>
+<ul>
+  <li>The bronze man looking out of a manhole on Panská street.</li>
+  <li>Honestly, a slightly awkward one. It's a tourist photo stop and not much else, and locals don't make a fuss about it.</li>
+  <li>If you pass by, fine. Don't go out of your way.</li>
+</ul>
+
+<h3>Hviezdoslav Square</h3>
+<ul>
+  <li>Long promenade with trees, ending at the old National Theatre (1886).</li>
+  <li>Opera and ballet tickets cost a fraction of what Vienna charges.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="views">2 · Landmarks &amp; views</h2>
+<h2 id="views">2 · Views</h2>
 <pre class="art" aria-hidden="true">
-              .-------.
-          _.-'_________'-._
-         '-.______________.-'
-                   \\
-                    \\  .
-                     \\    .
-                      \\       .
-    ===================\\===========
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ most snp
+                                         o   &lt;- you, at slavín
+           _|_     _|_                  /|\
+      ____|___|___|___|____       _____/ | \______
+     |  []  []  []  []  []|  ____/
+  ___|____________________|_/   villas, embassies, vineyards
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dunaj
 </pre>
 
-<h3>UFO Bridge deck <a class="map" href="https://www.google.com/maps/search/?api=1&query=UFO+Observation+Deck+Bratislava">map</a></h3>
+<h3>Bratislava Castle <a class="map" href="https://www.google.com/maps/search/?api=1&query=Bratislava+Castle">map</a></h3>
 <ul>
-  <li>Flying saucer 95 m above the Danube (1972); lift, deck, restaurant.</li>
-  <li>Views to Austria and Hungary. Go just before sunset.</li>
-</ul>
-
-<h3>Blue Church <a class="map" href="https://www.google.com/maps/search/?api=1&query=Blue+Church+Bratislava">map</a></h3>
-<ul>
-  <li>All-blue Art Nouveau church by Ödön Lechner (1907–13).</li>
-  <li>Inside usually open only around mass; the outside is the point.</li>
+  <li>The white block with four towers on the hill. Burned in 1811, rebuilt in the 1950s and 60s.</li>
+  <li>The grounds and the baroque garden are free. From the walls you see the river, the bridges and Petržalka.</li>
+  <li>Go up before sunset and walk back down the old steps into town.</li>
 </ul>
 
 <h3>Slavín <a class="map" href="https://www.google.com/maps/search/?api=1&query=Slav%C3%ADn+Bratislava">map</a></h3>
 <ul>
-  <li>WWII Soviet memorial among embassy villas; ~6,800 soldiers buried.</li>
-  <li>Quiet, wide city view. 20–30 min uphill walk.</li>
+  <li>Soviet war memorial on the hill above the castle, about 6,800 soldiers buried there.</li>
+  <li>Quiet, few tourists, and the widest view of the city.</li>
+  <li>20 to 30 minutes uphill through a neighbourhood of villas and embassies.</li>
+</ul>
+
+<h3>UFO bridge <span class="dim">· skip it</span></h3>
+<ul>
+  <li>The saucer on top of Most SNP. It looks good from below.</li>
+  <li>I wouldn't pay to go up. The restaurant is fine, nothing special, and the castle and Slavín have better views for free.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="culture">3 · Culture &amp; quirks</h2>
+<h2 id="coffee">3 · Coffee</h2>
+<pre class="art" aria-hidden="true">
+        ( (
+         ) )
+      ........
+      |      |]
+      \      /       flat white, not melange
+       `----'
+</pre>
+<p>Bratislava has a lot of good cafés, and the coffee is better than you'd expect. Vienna is famous for its old coffeehouses. Bratislava is more about small places that roast their own beans or buy from good roasters, and the baristas know what they're doing.</p>
+<ul>
+  <li><b>oproti</b>: specialty coffee and pastry, very local crowd. <a href="https://www.google.com/maps/search/?api=1&query=oproti+Bratislava">map</a></li>
+  <li><b>KOFI</b> <span class="dim">Karadžičova</span>. <a href="https://www.google.com/maps/search/?api=1&query=KOFI+Kara%C4%8Fi%C4%8Dova+Bratislava">map</a></li>
+  <li><b>Strettko &amp; Granita</b> <span class="dim">old town</span>: coffee and brunch. <a href="https://www.google.com/maps/search/?api=1&query=Strettko+Granita+Bratislava">map</a></li>
+  <li><b>Kaviareň Vták</b>. <a href="https://www.google.com/maps/search/?api=1&query=Kaviare%C5%88+Vt%C3%A1k+Bratislava">map</a></li>
+  <li><b>Kauka</b> <span class="dim">near Michael's Gate</span>: easy to walk past, odd furniture, couches. <a href="https://www.google.com/maps/search/?api=1&query=Kauka+Bratislava">map</a></li>
+  <li><b>SOREN</b>: coffee with a sandwich or a pastry. <a href="https://www.google.com/maps/search/?api=1&query=SOREN+coffee+Bratislava">map</a></li>
+  <li><b>Mimóza</b> <span class="dim">Dunajská</span>: coffee and gelato. <a href="https://www.google.com/maps/search/?api=1&query=Mim%C3%B3za+Bratislava">map</a></li>
+  <li><b>Subo bakery</b> and <b>Baryk</b>: bakery plus coffee. <a href="https://www.google.com/maps/search/?api=1&query=Subo+bakery+Bratislava">map</a> <a href="https://www.google.com/maps/search/?api=1&query=Baryk+Bratislava">map</a></li>
+  <li><b>MAD</b>: coffee in the day, natural wine at night. <a href="https://www.google.com/maps/search/?api=1&query=MAD+wine+bar+Bratislava">map</a></li>
+</ul>
+<p class="dim">Mostly from my own Google Maps list, plus a few from Čoje Bratislava (see section 7).</p>
+
+<!-- ============================================================ -->
+<h2 id="culture">4 · More to see</h2>
 <pre class="art" aria-hidden="true">
                _____
               (_____)
@@ -133,34 +195,28 @@
           panská x rybárska brána
 </pre>
 
-<h3>Čumil &amp; bronze statues <a class="map" href="https://www.google.com/maps/search/?api=1&query=%C4%8Cumil+Bratislava">map</a></h3>
+<h3>Blue Church <a class="map" href="https://www.google.com/maps/search/?api=1&query=Blue+Church+Bratislava">map</a></h3>
 <ul>
-  <li>Čumil: worker peeking from a manhole (Panská x Rybárska brána).</li>
-  <li>Also: Schöne Náci tipping his hat, Napoleonic soldier on Main Square.</li>
+  <li>St. Elizabeth's, Art Nouveau, by Ödön Lechner (1907–13). Pale blue all over, roof tiles included.</li>
+  <li>The inside is usually only open around mass. 10 minutes east of the old town.</li>
 </ul>
 
-<h3>Hviezdoslav Square &amp; Theatre <a class="map" href="https://www.google.com/maps/search/?api=1&query=Hviezdoslavovo+n%C3%A1mestie+Bratislava">map</a></h3>
+<h3>The river and the old park <a class="map" href="https://www.google.com/maps/search/?api=1&query=Sad+Janka+Kr%C3%A1%C4%BEa+Bratislava">map</a></h3>
 <ul>
-  <li>Tree-lined promenade; 1886 National Theatre. Opera tickets cheap vs. Vienna.</li>
-  <li>Christmas markets late Nov–23 Dec: lokše, punch, mulled wine.</li>
+  <li>Walk the embankment downstream to Eurovea.</li>
+  <li>Or cross Starý most (trams and people only) to Sad Janka Kráľa, a park from the 1770s. It's often called the oldest public park in Central Europe.</li>
 </ul>
 
-<h3>Danube riverside <a class="map" href="https://www.google.com/maps/search/?api=1&query=Sad+Janka+Kr%C3%A1%C4%BEa+Bratislava">map</a></h3>
+<h3>Socialist-era buildings</h3>
 <ul>
-  <li>Embankment from the UFO bridge to Eurovea.</li>
-  <li>Cross Starý most to Sad Janka Kráľa (1770s), oldest public park in Central Europe.</li>
-</ul>
-
-<h3>Communist-era Bratislava</h3>
-<ul>
-  <li>Slovak Radio: upside-down pyramid. <a href="https://www.google.com/maps/search/?api=1&query=Slovak+Radio+Building+Bratislava">map</a></li>
-  <li>Kamenné námestie: Hotel Kyjev, old Prior store.</li>
-  <li>Slovak National Gallery: bridge wing over a baroque barracks; free collection. <a href="https://www.google.com/maps/search/?api=1&query=Slovak+National+Gallery+Bratislava">map</a></li>
-  <li>Petržalka panel estate: best seen from the castle or the UFO.</li>
+  <li>Slovak Radio, the upside-down pyramid. <a href="https://www.google.com/maps/search/?api=1&query=Slovak+Radio+Building+Bratislava">map</a></li>
+  <li>Kamenné námestie with Hotel Kyjev and the old Prior department store.</li>
+  <li>Slovak National Gallery: a 1970s wing on legs over an old barracks. The permanent collection is free. <a href="https://www.google.com/maps/search/?api=1&query=Slovak+National+Gallery+Bratislava">map</a></li>
+  <li>Petržalka, the big housing estate across the river. Easiest to take in from the castle.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="trips">4 · Trips out</h2>
+<h2 id="trips">5 · Close by</h2>
 <pre class="art" aria-hidden="true">
                        |&gt;
                   _   _|_
@@ -171,44 +227,52 @@
        /     devín, on the rock        \___
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ morava + dunaj
 </pre>
+<p>Half-day trips. For Trenčín, Orava and other places further out, see <a href="slovakia.html">[s]lovakia</a>.</p>
 
 <h3>Devín Castle <a class="map" href="https://www.google.com/maps/search/?api=1&query=Dev%C3%ADn+Castle">map</a></h3>
 <ul>
-  <li>Ruin on a cliff where the Morava meets the Danube.</li>
-  <li>Gate of Freedom: memorial to those killed crossing the Iron Curtain.</li>
-  <li>Bus 29 from under the UFO bridge, ~25 min.</li>
+  <li>Ruin on a rock where the Morava flows into the Danube. Austria is on the other bank.</li>
+  <li>Below it, the Gate of Freedom remembers people shot trying to cross the Iron Curtain here.</li>
+  <li>Bus 29 from under the UFO bridge, about 25 minutes.</li>
 </ul>
 
-<h3>Danubiana museum <a class="map" href="https://www.google.com/maps/search/?api=1&query=Danubiana+Meulensteen+Art+Museum">map</a></h3>
+<h3>Danubiana <a class="map" href="https://www.google.com/maps/search/?api=1&query=Danubiana+Meulensteen+Art+Museum">map</a></h3>
 <ul>
-  <li>Modern art on a Danube peninsula near Čunovo, 15 km south.</li>
-  <li>Car, bike along the dam, or seasonal boat.</li>
+  <li>Modern art museum at the tip of a strip of land in the Danube, 15 km south.</li>
+  <li>Easiest by car or bike along the dam.</li>
 </ul>
 
-<h3>Small Carpathian wine <a class="map" href="https://www.google.com/maps/search/?api=1&query=Pezinok">map</a></h3>
+<h3>Wine villages <a class="map" href="https://www.google.com/maps/search/?api=1&query=Pezinok">map</a></h3>
 <ul>
-  <li>Rača (tram), Svätý Jur, Pezinok, Modra: 20–40 min.</li>
-  <li>Try Frankovka, Veltlínske zelené, Riesling.</li>
-  <li>Open-cellar days around St. Martin's (Nov) and in spring.</li>
+  <li>Rača is still inside the city (take the tram). Svätý Jur, Pezinok and Modra are 20 to 40 minutes away.</li>
+  <li>Small family cellars. Ask for Frankovka, Veltlínske zelené or Riesling.</li>
+  <li>Modra also makes the blue-and-white folk pottery.</li>
+  <li>Open-cellar weekends around St. Martin's Day (November) and in spring.</li>
+</ul>
+
+<h3>Červený Kameň <a class="map" href="https://www.google.com/maps/search/?api=1&query=Hrad+%C4%8Cerven%C3%BD+Kame%C5%88">map</a></h3>
+<ul>
+  <li>Castle in the Small Carpathians, about an hour by direct bus (stop "Častá, Červený Kameň").</li>
+  <li>Inside it's a museum of how the nobility lived. Pair it with a cellar in Modra on the way back.</li>
 </ul>
 
 <!-- ============================================================ -->
-<h2 id="one-day">5 · One day</h2>
+<h2 id="one-day">6 · One day</h2>
 <pre class="art" aria-hidden="true">
-    09:00 ----- 11:00 ----- 13:00 ----- 15:00 ----- 18:00 ----- 21:00
+    09:00 ----- 11:00 ----- 13:00 ----- 15:00 ----- 17:00 ----- 20:00
       |           |           |           |           |           |
-     gate       castle      lunch       river        UFO        bar
+    coffee       gate       lunch       castle      slavín     markets
 </pre>
 <ol>
-  <li>Michael's Gate → Main Square → Čumil.</li>
-  <li>St. Martin's → castle and gardens.</li>
-  <li>Lunch: fried cheese at Lokal Unas or crêpes at Palacinka Lacinka.</li>
-  <li>Hviezdoslav Square → riverside → Blue Church (or bus 29 to Devín).</li>
-  <li>Sunset at the UFO or Slavín; Nuda, then Mirror Bar.</li>
+  <li>Coffee at oproti or Kauka.</li>
+  <li>Michael's Gate, then wander: Main Square, Primate's Palace, St. Martin's.</li>
+  <li>Lunch: fried cheese at Lokal Unas, or crêpes at Palacinka Lacinka.</li>
+  <li>Up to the castle, then on to Slavín for sunset.</li>
+  <li>Back down to the Christmas markets, then Nuda or Mirror Bar.</li>
 </ol>
 
 <!-- ============================================================ -->
-<h2 id="eat">6 · Bars &amp; restaurants</h2>
+<h2 id="eat">7 · Bars &amp; restaurants</h2>
 <pre class="art" aria-hidden="true">
     \~~~~~/      ______       _____        ( )
      \   /      |~~~~~~|     (~~~~~)      (   )
@@ -217,59 +281,58 @@
       _|_       |______|       _|_         _|_
     cocktail      pivo         víno       kofola
 </pre>
-<p class="dim">Source: <a href="https://www.rexby.com/CojeBratislava/slovakia">Čoje Bratislava</a>, a local food blogger. Best food area: Nivy (Karadžičova–Košická), 15 min east of the old town.</p>
+<p class="dim">Most of these come from <a href="https://www.rexby.com/CojeBratislava/slovakia">Čoje Bratislava</a>, a local food blogger who doesn't take money from restaurants. The best food neighbourhood is Nivy, between Karadžičova and Košická, 15 minutes east of the old town.</p>
 
-<h3>Slovak, old &amp; new</h3>
+<h3>Slovak, old and new</h3>
 <ul>
-  <li><b>Irin.</b> <span class="dim">old town · €€€</span>: Slovak tasting menu. Book. <a href="https://www.google.com/maps/search/?api=1&query=Irin+restaurant+Bratislava">map</a></li>
-  <li><b>FACH</b> <span class="dim">€€</span>: own sourdough, courtyard breakfast. <a href="https://www.google.com/maps/search/?api=1&query=FACH+Bratislava">map</a></li>
-  <li><b>Lokal Unas @ Possonium</b> <span class="dim">€€</span>: fried cheese, fish &amp; chips. <a href="https://www.google.com/maps/search/?api=1&query=Possonium+Bratislava">map</a></li>
-  <li><b>Palacinka Lacinka</b> <span class="dim">€</span>: cult cheap crêpes; try tvaroh + jam. <a href="https://www.google.com/maps/search/?api=1&query=Palacinka+Lacinka+Bratislava">map</a></li>
-  <li><b>BISTRIC</b> <span class="dim">edge of town · €€€</span>: modern Slovak, open kitchen. <a href="https://www.google.com/maps/search/?api=1&query=Bistric+restaurant+Bratislava">map</a></li>
-  <li><b>U Holuba</b> <span class="dim">outside town · €€</span>: Czech-style meat &amp; sauces, top Pilsner. <a href="https://www.google.com/maps/search/?api=1&query=U+Holuba+restaurant+Slovakia">map</a></li>
+  <li><b>Irin.</b> <span class="dim">old town · €€€</span>. Tasting menu that plays with Slovak food. Book ahead. <a href="https://www.google.com/maps/search/?api=1&query=Irin+restaurant+Bratislava">map</a></li>
+  <li><b>FACH</b> <span class="dim">€€</span>. Their own sourdough, breakfast in a courtyard. <a href="https://www.google.com/maps/search/?api=1&query=FACH+Bratislava">map</a></li>
+  <li><b>Lokal Unas</b> <span class="dim">inside Possonium · €€</span>. Fried cheese with tartar sauce, or fish and chips. <a href="https://www.google.com/maps/search/?api=1&query=Possonium+Bratislava">map</a></li>
+  <li><b>Palacinka Lacinka</b> <span class="dim">€</span>. Cheap old-school crêpes. Order tvaroh (curd cheese) with jam. <a href="https://www.google.com/maps/search/?api=1&query=Palacinka+Lacinka+Bratislava">map</a></li>
+  <li><b>BISTRIC</b> <span class="dim">edge of town · €€€</span>. Modern Slovak cooking, open kitchen, fine with kids. <a href="https://www.google.com/maps/search/?api=1&query=Bistric+restaurant+Bratislava">map</a></li>
+  <li><b>U Holuba</b> <span class="dim">out of town · €€</span>. Czech-style tavern, meat and sauces, very good Pilsner. <a href="https://www.google.com/maps/search/?api=1&query=U+Holuba+restaurant+Slovakia">map</a></li>
 </ul>
 
-<h3>Worth a booking</h3>
+<h3>Book ahead</h3>
 <ul>
-  <li><b>Edomae Sushi Matsuki</b> <span class="dim">€€€</span>: 8-seat omakase in a cellar, ~18 courses. <a href="https://www.google.com/maps/search/?api=1&query=Edomae+Sushi+Matsuki+Bratislava">map</a></li>
-  <li><b>ECK</b> <span class="dim">€€€</span>: tasting menu in a vineyard facing Devín. <a href="https://www.google.com/maps/search/?api=1&query=ECK+Restaurant+Bratislava">map</a></li>
-  <li><b>Colette</b> <span class="dim">€€€</span>: French; "Carte Blanche" menu. <a href="https://www.google.com/maps/search/?api=1&query=Colette+restaurant+Bratislava">map</a></li>
+  <li><b>Edomae Sushi Matsuki</b> <span class="dim">€€€</span>. Eight seats in a cellar, around 18 small courses. <a href="https://www.google.com/maps/search/?api=1&query=Edomae+Sushi+Matsuki+Bratislava">map</a></li>
+  <li><b>ECK</b> <span class="dim">€€€</span>. Tasting menu in a vineyard, Devín Castle across the valley. <a href="https://www.google.com/maps/search/?api=1&query=ECK+Restaurant+Bratislava">map</a></li>
+  <li><b>Colette</b> <span class="dim">€€€</span>. French. Let the chef choose ("Carte Blanche"). <a href="https://www.google.com/maps/search/?api=1&query=Colette+restaurant+Bratislava">map</a></li>
 </ul>
 
 <h3>Casual</h3>
 <ul>
-  <li><b>Phong Nam</b> <span class="dim">Miletičova market · €€</span>: the original Vietnamese; share one dish. <a href="https://www.google.com/maps/search/?api=1&query=Phong+Nam+Bistro+Bratislava">map</a></li>
-  <li><b>Ramen Kazu</b> <span class="dim">€€</span>: spicy miso with pork belly. <a href="https://www.google.com/maps/search/?api=1&query=Ramen+Kazu+Bratislava">map</a></li>
-  <li><b>Mezcalli</b> <span class="dim">€€</span>: tacos, mezcal, tepache. <a href="https://www.google.com/maps/search/?api=1&query=Mezcalli+Bratislava">map</a></li>
-  <li><b>Gatto Matto Panská</b> <span class="dim">€€</span>: pancetta-brie pizza, filled pasta. Book. <a href="https://www.google.com/maps/search/?api=1&query=Gatto+Matto+Pansk%C3%A1+Bratislava">map</a></li>
-  <li><b>Ferdinand</b> <span class="dim">park · €€</span>: terrace brunch, Turkish eggs. <a href="https://www.google.com/maps/search/?api=1&query=Ferdinand+Bratislava">map</a></li>
-  <li><b>Tržnica</b> <span class="dim">€</span>: brutalist market hall turned food hall. <a href="https://www.google.com/maps/search/?api=1&query=Tr%C5%BEnica+Trnavsk%C3%A9+m%C3%BDto">map</a></li>
+  <li><b>Phong Nam</b> <span class="dim">Miletičova market · €€</span>. The first proper Vietnamese place in the country. Portions are big, share one. <a href="https://www.google.com/maps/search/?api=1&query=Phong+Nam+Bistro+Bratislava">map</a></li>
+  <li><b>Ramen Kazu</b> <span class="dim">€€</span>. Spicy miso with pork belly. <a href="https://www.google.com/maps/search/?api=1&query=Ramen+Kazu+Bratislava">map</a></li>
+  <li><b>Mezcalli</b> <span class="dim">€€</span>. Mexican cooks, tacos, a long mezcal list. Try the tepache. <a href="https://www.google.com/maps/search/?api=1&query=Mezcalli+Bratislava">map</a></li>
+  <li><b>Gatto Matto Panská</b> <span class="dim">€€</span>. Mostly Italian. Pancetta and brie pizza, filled pasta. Book online. <a href="https://www.google.com/maps/search/?api=1&query=Gatto+Matto+Pansk%C3%A1+Bratislava">map</a></li>
+  <li><b>Ferdinand</b> <span class="dim">in the park · €€</span>. Big terrace, brunch. Turkish eggs. <a href="https://www.google.com/maps/search/?api=1&query=Ferdinand+Bratislava">map</a></li>
+  <li><b>Tržnica</b> <span class="dim">€</span>. Brutalist market hall, now with bistros and bakeries inside. <a href="https://www.google.com/maps/search/?api=1&query=Tr%C5%BEnica+Trnavsk%C3%A9+m%C3%BDto">map</a></li>
 </ul>
 
 <h3>Wine bars</h3>
 <ul>
-  <li><b>Nuda</b> <span class="dim">under the castle · €€</span>: natural wine; Oyster Thursdays. <a href="https://www.google.com/maps/search/?api=1&query=Nuda+bar+Bratislava">map</a></li>
-  <li><b>MAD</b> <span class="dim">€€</span>: top sommelier's natural/Slovak wines, tinned fish. <a href="https://www.google.com/maps/search/?api=1&query=MAD+wine+bar+Bratislava">map</a></li>
-  <li><b>OMA</b> <span class="dim">€€€</span>: deli + wine bar, one communal table. <a href="https://www.google.com/maps/search/?api=1&query=OMA+fine+foods+wine+Bratislava">map</a></li>
+  <li><b>Nuda</b> <span class="dim">under the castle · €€</span>. Natural wine, busy at night. Oysters on Thursdays. <a href="https://www.google.com/maps/search/?api=1&query=Nuda+bar+Bratislava">map</a></li>
+  <li><b>MAD</b> <span class="dim">€€</span>. Run by one of Slovakia's best sommeliers. Tinned fish to go with it. <a href="https://www.google.com/maps/search/?api=1&query=MAD+wine+bar+Bratislava">map</a></li>
+  <li><b>OMA</b> <span class="dim">€€€</span>. Deli and wine bar with one long shared table. <a href="https://www.google.com/maps/search/?api=1&query=OMA+fine+foods+wine+Bratislava">map</a></li>
 </ul>
 
-<h3>Cocktails &amp; beer</h3>
+<h3>Cocktails and beer</h3>
 <ul>
-  <li><b>Mirror Bar</b> <span class="dim">Carlton Hotel · €€€</span>: no. 25 world's best bars (2026). <a href="https://www.google.com/maps/search/?api=1&query=Mirror+Bar+Carlton+Bratislava">map</a></li>
-  <li><b>Antique American Bar</b> <span class="dim">€€€</span>: tiny classic bar; book. <a href="https://www.google.com/maps/search/?api=1&query=Antique+American+Bar+Bratislava">map</a></li>
-  <li><b>U Žoltiho</b> <span class="dim">€€</span>: craft beer, leberkäse bun, pickled cheese. <a href="https://www.google.com/maps/search/?api=1&query=U+%C5%BDoltiho+Bratislava">map</a></li>
+  <li><b>Mirror Bar</b> <span class="dim">Carlton Hotel · €€€</span>. Number 25 on the World's 50 Best Bars list for 2026. <a href="https://www.google.com/maps/search/?api=1&query=Mirror+Bar+Carlton+Bratislava">map</a></li>
+  <li><b>Antique American Bar</b> <span class="dim">€€€</span>. Tiny, bartenders in white jackets, classic drinks. Book. <a href="https://www.google.com/maps/search/?api=1&query=Antique+American+Bar+Bratislava">map</a></li>
+  <li><b>U Žoltiho</b> <span class="dim">€€</span>. Craft beer and leberkäse in a bun. Ask for the pickled cheese. <a href="https://www.google.com/maps/search/?api=1&query=U+%C5%BDoltiho+Bratislava">map</a></li>
 </ul>
 
-<h3>Coffee &amp; sweets</h3>
+<h3>Sweets</h3>
 <ul>
-  <li><b>Pasteleria</b> <span class="dim">old town · €</span>: Slovak cakes; order krémeš. <a href="https://www.google.com/maps/search/?api=1&query=Pasteleria+Bratislava">map</a></li>
-  <li><b>Kauka</b> <span class="dim">by Michael's Gate</span>: hidden café, couches, vegan-friendly. <a href="https://www.google.com/maps/search/?api=1&query=Kauka+Bratislava">map</a></li>
-  <li><b>Le Miam</b> <span class="dim">€€€</span>: best French pâtisserie in town. <a href="https://www.google.com/maps/search/?api=1&query=Le+Miam+Bratislava">map</a></li>
-  <li><b>KOUN</b>: family-run gelato, not a tourist trap. <a href="https://www.google.com/maps/search/?api=1&query=KOUN+gelato+Bratislava">map</a></li>
+  <li><b>Pasteleria</b> <span class="dim">old town · €</span>. Slovak cakes. Get the krémeš. <a href="https://www.google.com/maps/search/?api=1&query=Pasteleria+Bratislava">map</a></li>
+  <li><b>Le Miam</b> <span class="dim">€€€</span>. French pastry, probably the best in town. <a href="https://www.google.com/maps/search/?api=1&query=Le+Miam+Bratislava">map</a></li>
+  <li><b>KOUN</b>. Gelato, family-run. <a href="https://www.google.com/maps/search/?api=1&query=KOUN+gelato+Bratislava">map</a></li>
 </ul>
 
 <h3>My saved spots</h3>
-<p class="dim">From my own Google Maps lists. ★ = also recommended above.</p>
+<p class="dim">Straight from my Google Maps lists, no notes. ★ means it's also listed above.</p>
 <p><b>Bars</b></p>
 <ul class="cols">
   <li><a href="https://www.google.com/maps/search/?api=1&query=Antique+American+Bar+Bratislava">Antique American Bar</a> <span class="acc">★</span></li>
@@ -315,8 +378,9 @@
   <li><a href="https://www.google.com/maps/search/?api=1&query=Garden+State+Pizza+Bratislava">Garden State Pizza</a></li>
 </ul>
 
+
 <!-- ============================================================ -->
-<h2 id="practical">7 · Practical</h2>
+<h2 id="practical">8 · Practical</h2>
 <pre class="art" aria-hidden="true">
               _______________|___________
              |  _   _   _   _   _   _  |
@@ -327,23 +391,23 @@
 
 <h3>Getting around</h3>
 <ul>
-  <li>Vienna airport: ~50 min by direct bus. Bratislava airport: bus 61.</li>
-  <li>Vienna: hourly trains (~1 h); Twin City Liner boat in summer.</li>
-  <li>Trams/buses: IDS BK app, or bank card on board.</li>
-  <li>Taxis: Bolt, Uber or Hopin. Never hail on the street.</li>
+  <li>From Vienna airport there's a direct bus, about 50 minutes. From Bratislava airport, bus 61.</li>
+  <li>Trains to Vienna every hour, about an hour. In summer there's also a boat.</li>
+  <li>Trams and buses: IDS BK app, or tap a bank card on board.</li>
+  <li>Taxis: order through Bolt, Uber or Hopin. Don't take one off the street.</li>
 </ul>
 
 <h3>What to order</h3>
 <table>
-  <tr><th>bryndzové halušky</th><td>dumplings, sheep's cheese, bacon</td></tr>
-  <tr><th>kapustnica</th><td>sauerkraut soup, winter staple</td></tr>
-  <tr><th>lokše</th><td>potato pancakes at markets</td></tr>
-  <tr><th>bratislavské rožky</th><td>poppy-seed / walnut crescents</td></tr>
-  <tr><th>Kofola</th><td>local cola, on draught</td></tr>
+  <tr><th>bryndzové halušky</th><td>potato dumplings, sheep's cheese, bacon</td></tr>
+  <tr><th>kapustnica</th><td>sauerkraut soup, eaten at Christmas</td></tr>
+  <tr><th>lokše</th><td>potato pancakes, at the markets</td></tr>
+  <tr><th>bratislavské rožky</th><td>poppy-seed or walnut crescents</td></tr>
+  <tr><th>Kofola</th><td>local cola, on tap</td></tr>
   <tr><th>víno</th><td>Veltlínske zelené, Riesling, Frankovka</td></tr>
 </table>
 
-<h3>Slovak words</h3>
+<h3>A few Slovak words</h3>
 <table>
   <tr><th>Dobrý deň</th><td>hello</td></tr>
   <tr><th>Ďakujem</th><td>thank you</td></tr>
@@ -359,6 +423,8 @@
 </footer>
 
 </div>
-<script src="fit.js?v=3"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js?v=1"></script>
+<script src="fit.js?v=4"></script>
 </body>
 </html>

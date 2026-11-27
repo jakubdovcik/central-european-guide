@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CE :: a Central European guide</title>
-<meta name="description" content="A short, plain guide to Central European cities: Bratislava and Prague.">
+<meta name="description" content="A short, plain guide to Bratislava, the rest of Slovakia, and Prague.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,14 +15,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <div class="screen">
 
 <header>
   <div class="title"><a class="home" href="./">CE</a><span class="dim">://</span>central-european-guide</div>
-  <nav class="cities"><a href="./" class="on">[h]ome</a> <a href="bratislava.html">[b]ratislava</a> <a href="prague.html">[p]rague</a></nav>
+  <nav class="cities"><a href="./" class="on">[h]ome</a> <a href="bratislava.html">[b]ratislava</a> <a href="slovakia.html">[s]lovakia</a> <a href="prague.html">[p]rague</a></nav>
 </header>
 
 <main>
@@ -41,12 +42,12 @@
 
 <h1>A Central European guide<span class="cursor">_</span></h1>
 <ul>
-  <li>Short, opinionated city guides. Bullet points only.</li>
-  <li>Sights picked by hand; bars and restaurants from local food writers.</li>
-  <li>Every place has a map link.</li>
+  <li>Short guides to the places I'd actually send a friend.</li>
+  <li>Sights picked by me. Food from local food writers and my own Google Maps lists.</li>
+  <li>Each page has a map, and every place links to Google Maps.</li>
 </ul>
 
-<h2>Cities</h2>
+<h2>Where</h2>
 <pre class="art" aria-hidden="true">
    ____|___|____     ~~o~~            /^\   +   /^\
   |  []    []   |      |        ____/   \_/ \_/   \____
@@ -55,16 +56,30 @@
      bratislava                       prague
 </pre>
 <table>
-  <tr><th><a href="bratislava.html">bratislava/</a></th><td>castle, old town, UFO bridge, Devín, wine villages · 25 bars &amp; restaurants</td></tr>
-  <tr><th><a href="prague.html">prague/</a></th><td>Charles Bridge, castle, Josefov, Letná, Vinohrady, Vyšehrad · 28 bars &amp; restaurants</td></tr>
+  <tr><th><a href="bratislava.html">bratislava/</a></th><td>Old Town, the castle and Slavín, lots of good coffee, Christmas markets, food and bars</td></tr>
+  <tr><th><a href="slovakia.html">slovakia/</a></th><td>trips out: Trnava, Trenčín, Banská Štiavnica, Bojnice, Orava Castle</td></tr>
+  <tr><th><a href="prague.html">prague/</a></th><td>Letná, Vinohrady, Malá Strana, the castle, Kutná Hora, food and bars</td></tr>
 </table>
 
-<h2>Between cities</h2>
+<div class="map-box" data-points='[
+["Bratislava",48.1435,17.1077],
+["Trnava",48.37677,17.58582],
+["Trenčín",48.89461,18.04507],
+["Banská Štiavnica",48.45809,18.89884],
+["Bojnice",48.77992,18.57778],
+["Orava Castle",49.26206,19.35866],
+["Prague",50.0875,14.4213],
+["Kutná Hora",49.9482,15.26821],
+["Vienna",48.2082,16.3738]
+]'></div>
+<ol class="legend"></ol>
+
+<h2>Getting between them</h2>
 <ul>
-  <li>Bratislava ↔ Vienna: hourly trains, ~1 h.</li>
-  <li>Bratislava ↔ Prague: direct trains, ~4 h.</li>
-  <li>Vienna airport is the easy way into Bratislava (~50 min bus).</li>
-  <li>Slovakia uses euro; Czechia uses koruna (CZK).</li>
+  <li>Bratislava to Vienna: a train every hour, about an hour.</li>
+  <li>Bratislava to Prague: direct trains, about 4 hours.</li>
+  <li>Flying in? Vienna airport is closer to Bratislava than most people think, 50 minutes by bus.</li>
+  <li>Slovakia pays in euros, Czechia in koruna (CZK).</li>
 </ul>
 </main>
 
@@ -74,6 +89,8 @@
 </footer>
 
 </div>
-<script src="fit.js?v=3"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js?v=1"></script>
+<script src="fit.js?v=4"></script>
 </body>
 </html>

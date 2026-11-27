@@ -96,3 +96,25 @@ td, th { overflow-wrap: anywhere; }
   td, th { border: 0; padding: 0; }
 }
 @media (max-width: 600px) { h2, h3 { scroll-margin-top: 112px; } }
+
+/* ---------- maps ---------- */
+.map-box { height: 420px; border: 1px solid var(--faint); margin: .6em 0; background: var(--bg); position: relative; z-index: 1; }
+.leaflet-container { font: 12px/1.4 "IBM Plex Mono", ui-monospace, Menlo, monospace; }
+.leaflet-container img { max-width: none !important; }
+.leaflet-container a { border: 0; }
+.leaflet-container a:hover { background: none; color: inherit; }
+.leaflet-tile-pane { filter: grayscale(1) contrast(.95) brightness(1.03); }
+@media (prefers-color-scheme: dark) { .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(.85) contrast(.9); } }
+.pin { background: var(--bg); color: var(--accent); border: 2px solid var(--accent); border-radius: 50%; font: 600 11px/18px "IBM Plex Mono", monospace; text-align: center; }
+.leaflet-popup-content a { color: var(--accent); }
+ol.legend { columns: 2 22ch; column-gap: 3ch; padding-left: 3.2ch; font-size: 13px; }
+ol.legend li { break-inside: avoid; margin: .1em 0; }
+ol.legend li::marker { color: var(--accent); font-weight: 600; }
+.map-box.locked::after { content: "tap map to move it"; position: absolute; right: 6px; bottom: 6px; z-index: 1000; background: var(--bg); color: var(--dim); font-size: 11px; padding: 1px 6px; border: 1px solid var(--faint); pointer-events: none; }
+table.times th { white-space: nowrap; }
+@media (max-width: 600px) {
+  .map-box { height: 320px; margin: .6em -14px; border-left: 0; border-right: 0; }
+  ol.legend { columns: 2 14ch; font-size: 13px; }
+  ol.legend li a { padding: 2px 0; }
+  header { z-index: 1100; }
+}
