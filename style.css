@@ -61,3 +61,5 @@ nav.cities a, nav a.on { border: 0; }
 nav a.on { background: var(--fg); color: var(--bg); }
 h3 a.map { font-weight: 400; font-size: 12px; margin-left: .5ch; }
 .acc { color: var(--accent); }
+ul.cols { columns: 2 16ch; column-gap: 3ch; }
+ul.cols li { break-inside: avoid; }
