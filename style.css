@@ -95,3 +95,4 @@ td, th { overflow-wrap: anywhere; }
   tr { padding: 4px 0; border-bottom: 1px dashed var(--faint); }
   td, th { border: 0; padding: 0; }
 }
+@media (max-width: 600px) { h2, h3 { scroll-margin-top: 112px; } }
