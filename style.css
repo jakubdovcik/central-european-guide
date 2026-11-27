@@ -63,3 +63,35 @@ h3 a.map { font-weight: 400; font-size: 12px; margin-left: .5ch; }
 .acc { color: var(--accent); }
 ul.cols { columns: 2 16ch; column-gap: 3ch; }
 ul.cols li { break-inside: avoid; }
+
+/* ---------- phone ---------- */
+pre.art { font-size: clamp(5px, 1.8vw, 12px); overflow-x: hidden; }
+h2, h3 { scroll-margin-top: 56px; }
+img, table { max-width: 100%; }
+td, th { overflow-wrap: anywhere; }
+
+@media (max-width: 600px) {
+  body { font-size: 15px; line-height: 1.55; }
+  .screen { padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 40px max(14px, env(safe-area-inset-left)); }
+
+  /* sticky, one-line, swipeable section menu */
+  header { position: sticky; top: 0; z-index: 5; background: var(--bg); margin: 0 -14px 14px; padding: 6px 14px 6px; }
+  .title { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  nav { flex-wrap: nowrap; overflow-x: auto; gap: 0 4px; margin: 2px 0 0; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { white-space: nowrap; padding: 6px 6px; font-size: 14px; }
+  nav.cities a { padding: 4px 6px; }
+
+  /* bigger tap targets */
+  a.map, li a, td a, th a { display: inline-block; padding: 4px 2px; }
+  h3 a.map { font-size: 13px; }
+  footer a { padding: 8px 4px; }
+
+  h1 { font-size: 1.25em; }
+  ul.cols { columns: 1; }
+  ul, ol { padding-left: 2.4ch; }
+  li { margin: .35em 0; }
+  table, tbody, tr, th, td { display: block; }
+  tr { padding: 4px 0; border-bottom: 1px dashed var(--faint); }
+  td, th { border: 0; padding: 0; }
+}
